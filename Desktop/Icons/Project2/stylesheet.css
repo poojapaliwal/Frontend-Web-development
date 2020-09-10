@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+#logo{
+    margin: 13px 100px
+}
+#logo img{
+    width: 122px;
+    height: 93px;
+    margin: -36px -87px;
+    padding: 23px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    top: 0px;
+    position: sticky;
+}
+#navbar ul{
+    display: flex;
+    /* text-decoration: none; */
+}
+#navbar::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 99%;
+    width: 100%;
+    z-index: -1;
+    top:0px;
+    left:0px;
+    opacity: 0.8;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.8rem;
+}
+#navbar ul li a{
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 34px 34px;
+    padding: 9px 38px;
+    color:white;
+    font-style: bold;
+    font-size: 40px;
+}
+#navbar ul li a:hover{
+    /* display: block; */
+    border-radius: 40px;
+    background-color:white;
+    color: black;
+    /* padding: 35px 27px; */
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 60px 220px;
+    height: 58%;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 73px;
+}
+#home h1{
+    color: rgb(9, 0, 136);
+    font-style: bold;
+    font-size: 2.2rem;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("https://cdn.cjr.org/wp-content/uploads/2019/07/AdobeStock_100000042-e1563305717660-686x371.jpeg") no-repeat center center/cover;
+    height: 464px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    top: 0px;
+    left: 0px;
+}
+.btn{
+    padding: 12px;
+    margin: 23px 23px;
+    background-color:black;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    color: white;
+    cursor: pointer;
+}
+/* services section */
+#services{
+    margin: 23px;
+    display: flex;
+}
+#services .box{
+    border: 4px solid brown;
+    padding: 17px;
+    margin: 0px 14px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    /* margin-bottom: 20px; */
+}
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+
+/* clients section */
+#client-section{
+    position: relative;
+    padding-bottom: 55px;
+}
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url("https://www.goodyearhealth.com/wp-content/uploads/1470895393417.jpeg") no-repeat center center/cover;
+    z-index: -1;
+    height: 251px;
+    width: 100%;
+    opacity: 0.7;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+    /* display: flex; */
+    height: 118px;
+    margin: 0px;
+    padding: 26px;
+}
+.client-items{
+    padding: 34px;
+} 
+
+/* contact section */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url("https://acelegalmarketing.com/wp-content/uploads/2020/07/bg_section12-1-Recovered.jpg") no-repeat center center/cover;
+    z-index: -1;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 53px 34px;
+    font-size: 1.5rem;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 45px;
+}
+#contact-box input,
+textarea{
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.7rem;
+    /* padding: 23p 23px; */
+}
+/* utility */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2rem;
+    padding: 12px;
+}
+.center{
+    text-align: center;
+}
